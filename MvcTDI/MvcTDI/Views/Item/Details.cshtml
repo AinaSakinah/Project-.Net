@@ -1,0 +1,50 @@
+﻿@model MvcTDI.Models.Item
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Item</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.inventory_item)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.inventory_item)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.inventory_desc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.inventory_desc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.supplier_id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.supplier_id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.worker_id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.worker_id)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.inventory_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
